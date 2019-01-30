@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Chart JS</title>
+	<style>
+		.demo {
+			height: 1000px;
+			width: 600px;
+		}
+	</style>
+</head>
+<body>
+
+	<section class="demo">
+			<canvas id="demo"></canvas>
+	</section>
+
+	<script src="chart.min.js"></script>
+	<script>
+		var demo = document.getElementById('demo').getContext('2d');
+		var chart = new Chart(demo, {
+			type: "horizontalBar",
+			data: {
+				labels:["januari", "februari", "april"],
+				datasets: [
+					{
+						label: 'Hafalan',
+						data: [12, 20, 18],
+						backgroundColor: [
+							'#96e6a1',
+							'#bada55',
+						],
+					}
+				]
+			},
+			options: {
+				scales: {
+					xAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		})
+
+
+    </script>
+</body>
+</html>
