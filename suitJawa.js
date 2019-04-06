@@ -7,7 +7,7 @@ while (lagi) {
 	// Menangkap pilihan computer dengan bilangan random
 	var comChoise = Math.random();
 
-	if (comChoise < 0.33 ){
+	if (comChoise < 0.33) {
 		comChoise = 'gajah';
 	} else if (comChoise >= 0.33 && comChoise < 0.66) {
 		comChoise = 'orang';
@@ -19,19 +19,15 @@ while (lagi) {
 	// Menentukan rules 
 	var hasil = '';
 
-	if (comChoise == playerChoise ) {
+	if (comChoise == playerChoise) {
 		hasil = 'SERI';
-	} 
-	else if (playerChoise == 'gajah') {
+	} else if (playerChoise == 'gajah') {
 		hasil = (comChoise == 'orang') ? 'MENANG' : 'KALAH';
-	} 
-	else if (playerChoise == 'orang') {
+	} else if (playerChoise == 'orang') {
 		hasil = (comChoise == 'semut') ? 'MENANG' : 'KALAH';
-	} 
-	else if (playerChoise == 'semut') {
+	} else if (playerChoise == 'semut') {
 		hasil = (comChoise == 'manusia') ? 'MENANG' : 'KALAH';
-	} 
-	else {
+	} else {
 		hasil = 'memasukkan pilihan yang salah';
 	}
 
