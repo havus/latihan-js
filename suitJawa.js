@@ -36,4 +36,4 @@ while (lagi) {
 	lagi = confirm('Main lagi?');
 }
 
-alert('Terima kasih telah bermain')
+alert('Terima kasih telah bermain');

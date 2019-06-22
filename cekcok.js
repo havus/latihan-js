@@ -19,4 +19,3 @@ $('#pencet').on('click', function() {
     console.log(countClick);
     countClick++;
 })
-
